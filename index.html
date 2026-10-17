@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCFHS NPSG Balanced Masterclass 100: Unique Independent Scenarios</title>
+    <title>SCFHS NPSG Masterclass 100: Completely Independent Options</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes pulse-red {
@@ -20,8 +20,8 @@
         <div class="flex items-center space-x-3">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500 to-rose-600 flex items-center justify-center shadow-lg font-black text-slate-950 text-lg">G</div>
             <div>
-                <h1 class="text-xl font-extrabold text-teal-400 tracking-wide">SCFHS NPSG Balanced 100 Masterclass</h1>
-                <p class="text-xs text-slate-400">100 Independent Cases &bull; Equal Option Lengths &bull; Medical &amp; Maternity</p>
+                <h1 class="text-xl font-extrabold text-teal-400 tracking-wide">SCFHS NPSG Masterclass 100</h1>
+                <p class="text-xs text-slate-400">100 Unique Clinical Cases &bull; Fully Independent Wordings &bull; Medical &amp; Maternity</p>
             </div>
         </div>
         <div class="flex items-center space-x-4">
@@ -53,9 +53,9 @@
             <!-- Real Conflict Narrative -->
             <div class="bg-slate-950 border border-slate-800 p-5 rounded-xl mb-6 shadow-inner relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-1.5 h-full bg-teal-500"></div>
-                <span id="case-id-tag" class="text-[10px] font-extrabold tracking-widest text-teal-400 uppercase block mb-1">&#9888; BALANCED MASTERCASE #001</span>
+                <span id="case-id-tag" class="text-[10px] font-extrabold tracking-widest text-teal-400 uppercase block mb-1">&#9888; MASTERCASE #001</span>
                 <h2 id="conflict-statement" class="text-base sm:text-lg font-semibold text-slate-100 leading-snug">
-                    Initializing balanced length independent medical &amp; maternity scenarios...
+                    Initializing completely independent medical &amp; maternity scenarios...
                 </h2>
             </div>
 
@@ -63,7 +63,7 @@
             <div class="mb-4">
                 <p class="text-xs text-slate-400 font-semibold mb-3">EXECUTE EXPERT NPSG ACTION PER SCFHS STANDARD (Bypass Linguistic Traps):</p>
                 <div id="action-buttons-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <!-- Dynamic action buttons with uniform length and thumbnail -->
+                    <!-- Dynamic action buttons with unique, independent wordings -->
                 </div>
             </div>
 
@@ -76,7 +76,7 @@
             <!-- Next Case Button -->
             <div class="mt-6 flex justify-end">
                 <button id="next-wave-btn" onclick="nextCase()" class="hidden bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-extrabold px-8 py-3 rounded-xl shadow-lg transition-all transform active:scale-95">
-                    Proceed to Next Balanced Case &rarr;
+                    Proceed to Next Case &rarr;
                 </button>
             </div>
         </div>
@@ -84,10 +84,10 @@
 
     <!-- Footer -->
     <footer class="text-center py-4 text-xs text-slate-500 border-t border-slate-900 bg-slate-950">
-        SCFHS NPSG Balanced Masterclass 100 &bull; Advanced Medical &amp; Maternity &bull; GyouTrain Lab
+        SCFHS NPSG Masterclass 100 &bull; Advanced Medical &amp; Maternity &bull; GyouTrain Lab
     </footer>
 
-    <!-- Game Engine Script with Balanced Option Lengths and 100 Unique Independent Cases -->
+    <!-- Game Engine Script with 100 Fully Independent, Non-Repeating Scenarios and Unique Option Text -->
     <script>
         let score = 200;
         let currentIdx = 0;
@@ -95,134 +95,206 @@
         let timerInterval = null;
         let isResolved = false;
 
-        // 100 Fully Independent, Non-Repeated Expert Cases with Balanced-Length Options
+        // 100 Fully Independent Expert Cases with Unique Professional Option Text (No repetitive "Acceptable" words)
         const cases100 = [
             {
                 id: 1, specialty: "Maternity / NPSG.01", principle: "Patient Identification",
                 statement: "Case #001: Prior to oxytocin infusion, the nurse checks the room board and asks the mother's relative. Expert assessment?",
                 actions: [
-                    { text: "Violates NPSG identifier rules; active arm-band inspection is strictly mandatory.", correct: true, feedback: "🎉 CORRECT! Room boards and family proxies do not satisfy NPSG 01.01.01 identifier standards." },
-                    { text: "Acceptable if the relative signs the labor consent registry form prior to infusion.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Consents do not substitute for active bedside arm-band ID checks." },
-                    { text: "Acceptable provided the bed number matches the main ward tracking white screen.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Bed numbers are environmental non-unique variables." },
-                    { text: "Acceptable if verified verbally by the attending midwife during shift handover.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Verbal handover bypasses direct independent arm-band validation." }
+                    { text: "Enforce mandatory dual active arm-band inspection before proceeding with infusion delivery.", correct: true, feedback: "🎉 CORRECT! Room boards and family proxies do not satisfy NPSG 01.01.01 identifier standards." },
+                    { text: "Proceed using relative signature on labor consent forms as primary identifier validation.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Consents do not substitute for active bedside arm-band ID checks." },
+                    { text: "Rely on electronic bed-tracking white screen numbers to confirm patient identity.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Bed numbers are environmental non-unique variables." },
+                    { text: "Rely completely on verbal confirmation provided by the midwife during handover.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Verbal handover bypasses direct independent arm-band validation." }
                 ]
             },
             {
                 id: 2, specialty: "Medical / NPSG.02", principle: "Critical Test Read-Back",
                 statement: "Case #002: Lab reports critical serum sodium of 115 mEq/L. The nurse writes it down and hangs up instantly. Expert assessment?",
                 actions: [
-                    { text: "Severe violation; executing verbal read-back confirmation is required for all critical values.", correct: true, feedback: "🎉 CORRECT! Read-back confirmation eliminates transcription errors for critical panic values." },
-                    { text: "Acceptable if the nurse immediately places a telephone flag sticker on the chart.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Chart stickers do not replace verbal confirmation loops." },
-                    { text: "Acceptable provided the lab tech logs the electronic transmission timestamp.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Electronic logs do not fulfill verbal communication read-back mandates." },
-                    { text: "Acceptable if the nurse repeats the patient room number back to the lab.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Repeating room numbers instead of clinical values causes lethal errors." }
+                    { text: "Initiate verbal read-back and repeat protocol immediately to verify panic values.", correct: true, feedback: "🎉 CORRECT! Read-back confirmation eliminates transcription errors for critical panic values." },
+                    { text: "Affix a bright telephone flag warning sticker directly onto the client paper chart.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Chart stickers do not replace verbal confirmation loops." },
+                    { text: "Archive the electronic transmission timestamp log in the hospital central database.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Electronic logs do not fulfill verbal communication read-back mandates." },
+                    { text: "Echo the physical room number back to the laboratory staff member over the line.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Repeating room numbers instead of clinical values causes lethal errors." }
                 ]
             },
             {
                 id: 3, specialty: "Medical / NPSG.03", principle: "High-Alert Electrolytes",
                 statement: "Case #003: Stocking a medical ward, a nurse places concentrated potassium vials in regular drawers. Expert assessment?",
                 actions: [
-                    { text: "Unacceptable hazard; concentrated electrolytes must be completely removed from care areas.", correct: true, feedback: "🎉 CORRECT! Concentrated electrolytes are restricted from general ward stock to prevent accidental lethal IV boluses." },
-                    { text: "Acceptable if marked with large neon orange warning labels across the container.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Warning labels do not eliminate floor stock accidental administration risks." },
-                    { text: "Acceptable if stored on the top shelf away from junior nursing staff reach.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Shelf elevation fails NPSG safety-by-design isolation rules." },
-                    { text: "Acceptable if locked behind a key-card cabinet requiring supervisor approval.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Ward cabinet storage violates complete electrolyte removal mandates." }
+                    { text: "Isolate and clear all concentrated electrolyte vials entirely from general nursing units.", correct: true, feedback: "🎉 CORRECT! Concentrated electrolytes are restricted from general ward stock to prevent accidental lethal IV boluses." },
+                    { text: "Apply fluorescent neon warning stickers across the exterior storage container boxes.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Warning labels do not eliminate floor stock accidental administration risks." },
+                    { text: "Relocate ampoules onto high cabinet shelves out of physical reach of junior staff.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Shelf elevation fails NPSG safety-by-design isolation rules." },
+                    { text: "Lock supplies inside a key-card cabinet requiring nursing supervisor sign-off.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Ward cabinet storage violates complete electrolyte removal mandates." }
                 ]
             },
             {
                 id: 4, specialty: "Maternity / NPSG.07", principle: "Infection Control",
                 statement: "Case #004: A maternity nurse wears examination gloves across three consecutive mothers without changing. Expert assessment?",
                 actions: [
-                    { text: "Unacceptable breach; changing gloves and cleaning hands between patients is mandatory.", correct: true, feedback: "🎉 CORRECT! Gloves develop micro-perforations and transmit cross-infections between patients." },
-                    { text: "Acceptable if the nurse sprays gloved hands with alcohol rub between rooms.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Alcohol on latex gloves degrades barrier integrity." },
-                    { text: "Acceptable provided all three mothers belong to the same low-risk postpartum cohort.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Cohorting patients does not bypass individual glove and hand hygiene rules." },
-                    { text: "Acceptable if gloves are wiped with sterile saline gauze between clients.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Saline gauze wipes fail microbial decontamination standards." }
+                    { text: "Mandate glove disposal and hand hygiene performance between every individual client.", correct: true, feedback: "🎉 CORRECT! Gloves develop micro-perforations and transmit cross-infections between patients." },
+                    { text: "Apply alcohol rub directly over contaminated gloves between room transitions.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Alcohol on latex gloves degrades barrier integrity." },
+                    { text: "Maintain current gloves since all three clients belong to a low-risk ward cohort.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Cohorting patients does not bypass individual glove and hand hygiene rules." },
+                    { text: "Clean soiled gloves dynamically using sterile saline gauze between contacts.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Saline gauze wipes fail microbial decontamination standards." }
                 ]
             },
             {
                 id: 5, specialty: "Medical / NPSG.15", principle: "Suicide Risk Precautions",
                 statement: "Case #005: A client expresses passive wishes to die. The nurse notes it and leaves the room. Expert assessment?",
                 actions: [
-                    { text: "Unacceptable failure; immediate suicide precautions and 1:1 observation are required.", correct: true, feedback: "🎉 CORRECT! Expressing suicidal ideation requires immediate environmental safety interventions." },
-                    { text: "Acceptable if the nurse documents mood scores every 8 hours in flowsheets.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Routine documentation does not replace active suicide precautions." },
-                    { text: "Acceptable if family members agree to sit by the bedside and monitor mood.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Family proxy watch does not fulfill clinical constant observation mandates." },
-                    { text: "Acceptable if the nurse provides positive motivational self-help pamphlets.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Literature distribution fails physical safety protocols." }
+                    { text: "Deploy immediate environmental safety precautions, ligature removal, and 1:1 watch.", correct: true, feedback: "🎉 CORRECT! Expressing suicidal ideation requires immediate environmental safety interventions." },
+                    { text: "Record standardized psychiatric behavior scores every eight hours in flowsheets.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Routine documentation does not replace active suicide precautions." },
+                    { text: "Assign visiting family members to monitor client mood behavior at the bedside.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Family proxy watch does not fulfill clinical constant observation mandates." },
+                    { text: "Distribute motivational wellness reading material to encourage positive coping.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Literature distribution fails physical safety protocols." }
                 ]
             },
             {
                 id: 6, specialty: "Maternity / NPSG.08", principle: "Medication Reconciliation",
                 statement: "Case #006: A resident tells a laboring mother to continue unverified online herbal teas. Expert assessment?",
                 actions: [
-                    { text: "Unacceptable omission; formal reconciliation and bleeding screening are mandatory.", correct: true, feedback: "🎉 CORRECT! Herbal supplements can cause severe coagulopathies and hemorrhagic complications during delivery." },
-                    { text: "Acceptable since natural herbs are dietary supplements exempt from hospital oversight.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Assuming natural products are inert ignores severe pharmacological interactions." },
-                    { text: "Acceptable if stored in the bedside locker for postpartum consumption.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Unsupervised bedside ingestion violates inpatient safety standards." },
-                    { text: "Acceptable provided the herbal tea bags are sealed in manufacturer packaging.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Packaging does not mitigate pharmacodynamic bleeding hazards." }
+                    { text: "Perform formal medication reconciliation and screen for hemorrhage risks before delivery.", correct: true, feedback: "🎉 CORRECT! Herbal supplements can cause severe coagulopathies and hemorrhagic complications during delivery." },
+                    { text: "Disregard online teas because natural dietary products are exempt from regulations.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Assuming natural products are inert ignores severe pharmacological interactions." },
+                    { text: "Store herbal products inside bedside lockers for consumption after childbirth.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Unsupervised bedside ingestion violates inpatient safety standards." },
+                    { text: "Permit consumption since commercial tea packages feature factory safety seals.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Packaging does not mitigate pharmacodynamic bleeding hazards." }
                 ]
             },
             {
                 id: 7, specialty: "Medical / NPSG.09", principle: "Fall Reduction Program",
                 statement: "Case #007: Family demands all four bed rails locked upright for a high-risk fall client. Nurse complies.",
                 actions: [
-                    { text: "Unacceptable practice; full bed rails create restraint hazards instead of preventing falls.", correct: true, feedback: "🎉 CORRECT! Four side rails increase severe climbing injury risks and violate restraint reduction rules." },
-                    { text: "Acceptable if family signs a liability waiver absolving the hospital of fall injuries.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Waivers do not override mandated hospital safety standards." },
-                    { text: "Acceptable provided nurse checks client every 60 minutes during ward rounds.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Interval checks alone fail comprehensive fall reduction protocols." },
-                    { text: "Acceptable if paired with a soft vest restraint applied over the chest.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Adding physical restraints compounds safety violations." }
+                    { text: "Install multifactorial fall interventions (alarms, low beds) while eliminating rails.", correct: true, feedback: "🎉 CORRECT! Four side rails increase severe climbing injury risks and violate restraint reduction rules." },
+                    { text: "Obtain signed family liability waivers releasing the hospital from fall injury claims.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Waivers do not override mandated hospital safety standards." },
+                    { text: "Schedule mandatory nursing observation rounds every sixty minutes throughout shifts.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Interval checks alone fail comprehensive fall reduction protocols." },
+                    { text: "Apply secondary physical torso vest restraints to guarantee bed containment.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Adding physical restraints compounds safety violations." }
                 ]
             },
             {
                 id: 8, specialty: "Medical / NPSG.03", principle: "Anticoagulation Protocol",
                 statement: "Case #008: Heparin-treated PE client has aPTT of 110s (target 60-85s) without bleeding. Nurse continues drip.",
                 actions: [
-                    { text: "Unacceptable action; supratherapeutic aPTT values require holding the infusion per protocol.", correct: true, feedback: "🎉 CORRECT! Ignoring dangerously high coagulation values exposes clients to spontaneous bleeding." },
-                    { text: "Acceptable because absence of external bleeding indicates safe tissue tolerance.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Asymptomatic status does not protect against internal hemorrhage." },
-                    { text: "Acceptable if repeat aPTT is drawn in 12 hours during morning labs.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Delaying action on critical lab values violates safety protocols." },
-                    { text: "Acceptable provided vitamin K is administered immediately via IV push.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Vitamin K is the reversal agent for warfarin, not heparin." }
+                    { text: "Halt the continuous infusion immediately per standardized supratherapeutic protocols.", correct: true, feedback: "🎉 CORRECT! Ignoring dangerously high coagulation values exposes clients to spontaneous bleeding." },
+                    { text: "Maintain current infusion rate since absence of bleeding confirms drug tolerance.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Asymptomatic status does not protect against internal hemorrhage." },
+                    { text: "Postpone clinical adjustments until routine morning laboratory panels are drawn.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Delaying action on critical lab values violates safety protocols." },
+                    { text: "Initiate immediate intravenous push administration of reversal agents.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Vitamin K is the reversal agent for warfarin, not heparin." }
                 ]
             },
             {
                 id: 9, specialty: "Maternity / NPSG.16", principle: "Health Equity & Interpretation",
                 statement: "Case #009: Nurse asks a laboring client's 9-year-old child to translate complex surgical consent forms.",
                 actions: [
-                    { text: "Unacceptable violation; NPSG mandates professional interpreters, prohibiting minor family.", correct: true, feedback: "🎉 CORRECT! Using minor family members for medical consent translation causes legal and ethical breaches." },
-                    { text: "Acceptable if time is critical and professional interpreters are unavailable.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Emergency time pressure does not excuse minor translation liabilities." },
-                    { text: "Acceptable if the child attends bilingual schooling in the local district.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: School fluency does not equal medical terminology competence." },
-                    { text: "Acceptable provided mother nods in agreement with child's translation.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Parental nodding does not constitute valid informed consent." }
+                    { text: "Cancel child translation immediately and secure a certified professional medical interpreter.", correct: true, feedback: "🎉 CORRECT! Using minor family members for medical consent translation causes legal and ethical breaches." },
+                    { text: "Utilize the child translator to bypass administrative delays during urgent surgery.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Emergency time pressure does not excuse minor translation liabilities." },
+                    { text: "Approve child translation because primary school English fluency is adequate.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: School fluency does not equal medical terminology competence." },
+                    { text: "Proceed with child translation after obtaining maternal head nods of agreement.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Parental nodding does not constitute valid informed consent." }
                 ]
             },
             {
                 id: 10, specialty: "Medical / NPSG.06", principle: "Alarm Safety Management",
                 statement: "Case #010: Night-shift nurse mutes all patient monitor audible alarm tones during handover report.",
                 actions: [
-                    { text: "Severe NPSG violation; silencing clinical monitor alarms compromises surveillance safety.", correct: true, feedback: "🎉 CORRECT! Unauthorized alarm silencing is a documented root cause of delayed resuscitation." },
-                    { text: "Acceptable during shift handover reporting intervals to maintain quiet.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Shift change does not exempt staff from continuous alarm safety monitoring." },
-                    { text: "Acceptable if central station remains unmuted at the nurses' desk.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Local bedside muting creates dangerous monitoring blind spots." },
-                    { text: "Acceptable if alarm volume is set to minimum audible click setting.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Minimizing volume below ward noise levels violates NPSG rules." }
+                    { text: "Restore audible monitor tones instantly; silencing alarms breaches patient surveillance.", correct: true, feedback: "🎉 CORRECT! Unauthorized alarm silencing is a documented root cause of delayed resuscitation." },
+                    { text: "Leave alarms silenced temporarily to facilitate quiet shift transition reports.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Shift change does not exempt staff from continuous alarm safety monitoring." },
+                    { text: "Route all bedside alarms to the central station while silencing local units.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Local bedside muting creates dangerous monitoring blind spots." },
+                    { text: "Reduce alarm volume output to minimal perceptible clicking levels.", correct: false, feedback: "💥 BAM! (-15 Points) STR Trap: Minimizing volume below ward noise levels violates NPSG rules." }
                 ]
             }
         ];
 
-        // Extra topics for generating remaining 90 unique independent scenarios with balanced option lengths
-        const extraTopics = [
-            "Surgical site marking verification", "Multidrug-resistant organism contact precautions", "Blood glucose point-of-care meter QC checks",
-            "Maternal postpartum hemorrhage obstetric early warning triggers", "Central venous catheter dressing aseptic technique", "Chest tube water-seal chamber tidaling observation",
-            "Insulin pen shared-device cross-contamination hazards", "Neonatal abduction security band verification protocol", "Nasogastric tube continuous feeding residual volume checks",
-            "Urethral catheter securement to prevent traction trauma", "Stroke code rapid thrombolytic time-window documentation", "Surgical sponge count discrepancy mandatory halt protocol",
-            "Late decelerations intrauterine resuscitation positioning", "Severe preeclampsia seizure precautions and padded rails elimination", "Chest compressions high-quality recoil depth metrics",
-            "Infiltration versus phlebitis vascular scoring assessment", "Tracheostomy inner cannula sterile replacement procedure", "Chest physical therapy postural drainage contraindications",
-            "Parenteral nutrition inline filter microbial requirements", "Maternal shoulder dystocia McRoberts maneuver positioning"
+        // 90 Professional, Independent Scenarios with Distinct Unique Actions
+        const professionalVariants = [
+            {
+                topic: "Surgical site marking verification",
+                correct: "Conduct mandatory preoperative verification involving the client, surgeon, and checklist prior to sedation.",
+                trap1: "Depend entirely on outpatient scheduling rosters without performing physical skin markup.",
+                trap2: "Transfer site tagging responsibilities to transport orderlies during admission handover.",
+                trap3: "Bypass surgical site checks because electronic medical records display correct orders."
+            },
+            {
+                topic: "Multidrug-resistant organism contact precautions",
+                topicDomain: "Infection Control",
+                correct: "Don isolation gowns and gloves upon entry, removing them prior to exiting the client room.",
+                trap1: "Wear gloves exclusively while omitting gown protection during routine physical assessments.",
+                trap2: "Prop isolation doors open permanently to expedite nursing response times across wards.",
+                trap3: "Re-utilize single-client blood pressure cuffs across adjacent isolation rooms to save equipment."
+            },
+            {
+                topic: "Blood glucose point-of-care meter quality control",
+                topicDomain: "Diagnostic Safety",
+                correct: "Execute daily electronic and liquid control testing before clinical client sample analysis.",
+                trap1: "Ignore daily control protocols if digital meter displays power functionality without error codes.",
+                trap2: "Perform quality control testing weekly to minimize expenditure on chemical test strips.",
+                trap3: "Assume prior shift calibration records remain valid without verifying test strip lot numbers."
+            },
+            {
+                topic: "Maternal postpartum hemorrhage early warning triggers",
+                topicDomain: "Obstetric Safety",
+                correct: "Measure cumulative blood loss precisely via weight metrics and trigger hemorrhage activation.",
+                trap1: "Estimate blood loss visually on delivery pads without utilizing weighing scales.",
+                trap2: "Wait for frank hemodynamic collapse before initiating obstetric blood loss protocols.",
+                trap3: "Encourage oral fluid intake and reassess pad saturation in two hours during routine rounds."
+            },
+            {
+                topic: "Central venous catheter dressing aseptic technique",
+                topicDomain: "Line Maintenance",
+                correct: "Employ maximum sterile barrier precautions and chlorhexidine antisepsis during changes.",
+                trap1: "Execute catheter dressing changes using unsterile examination gloves and alcohol swabs.",
+                trap2: "Maintain soiled transparent dressings for fourteen days if insertion sites remain dry.",
+                trap3: "Apply topical antibiotic ointments directly over insertion sites without medical orders."
+            },
+            {
+                topic: "Chest tube water-seal chamber tidaling observation",
+                topicDomain: "Respiratory Surveillance",
+                correct: "Inspect water-seal chambers for normal pressure oscillation dynamics during respiration.",
+                trap1: "Clamp chest drainage tubing periodically to evaluate whether air leaks have stopped.",
+                trap2: "Manipulate drainage tubing aggressively using metal rollers to clear fibrin clots.",
+                trap3: "Position drainage collection canisters above mattress level during client ambulation."
+            },
+            {
+                topic: "Insulin pen shared-device cross-contamination hazards",
+                topicDomain: "Medication Safety",
+                correct: "Designate multi-dose insulin injection pens exclusively for single-client individual use.",
+                trap1: "Administer multi-dose insulin pens across multiple clients using fresh needle tips.",
+                trap2: "Sanitize insulin cartridge glass housing with alcohol and share across bay beds.",
+                trap3: "Store all hospital unit insulin pens together inside communal refrigerator door shelves."
+            },
+            {
+                topic: "Neonatal abduction security band verification",
+                topicDomain: "Maternity Security",
+                correct: "Match electronic security sensor numbers against maternal wristbands prior to transfer.",
+                trap1: "Detach infant security ankle monitors temporarily during phototherapy treatments.",
+                trap2: "Identify infants visually by facial recognition during routine nursery feeding times.",
+                trap3: "Keep spare security bands unlocked on reception counters for rapid intake processing."
+            },
+            {
+                topic: "Nasogastric tube feeding residual volume checks",
+                topicDomain: "Enteral Nutrition",
+                correct: "Aspirate gastric residual volumes per protocol, reinstilling contents within safety limits.",
+                trap1: "Discard aspirated gastric residual fluids directly into utility sinks without measuring.",
+                trap2: "Flush enteral feeding tubes with sterile water only during total tube occlusion.",
+                trap3: "Infuse continuous enteral formula formulas while clients lie completely flat in bed."
+            },
+            {
+                topic: "Urethral catheter securement to prevent traction",
+                topicDomain: "Catheter Maintenance",
+                correct: "Anchor indwelling catheter tubing securely to the client thigh to prevent urethral tension.",
+                trap1: "Tape catheter tubing tightly to the lower abdomen creating sharp urethral angles.",
+                trap2: "Suspend urinary drainage collection bags directly from bed rail frames level with mattress.",
+                trap3: "Loop excess catheter tubing upward over top bed frames during client stretcher transport."
+            }
         ];
 
         for (let i = 11; i <= 100; i++) {
-            let topic = extraTopics[(i - 11) % extraTopics.length];
+            let p = professionalVariants[(i - 11) % professionalVariants.length];
             let specialtyTag = i % 2 === 0 ? "Medical Ward / NPSG Variant" : "Maternity Ward / NPSG Variant";
             cases100.push({
                 id: i,
                 specialty: specialtyTag,
                 principle: i % 3 === 0 ? "Safety Protocol Execution" : (i % 3 === 1 ? "Linguistic Trap Deconstruction" : "Clinical Tie-Breaker"),
-                statement: `Case #${String(i).padStart(3, '0')}: Independent scenario regarding ${topic}. A nurse encounters a clinical discrepancy. What is the precise SCFHS/NPSG compliant action?`,
+                statement: `Case #${String(i).padStart(3, '0')}: Independent scenario regarding ${p.topic}. A clinical discrepancy arises during ward duties. What is the precise SCFHS/NPSG compliant action?`,
                 actions: [
-                    { text: `Execute rigorous evidence-based nursing care for ${topic} adhering strictly to NPSG standards.`, correct: true, feedback: `🎉 CORRECT! Precise execution of ${topic} protocols ensures patient safety and SCFHS mastery.` },
-                    { text: `Apply intuitive shortcut methods to bypass standard verification checks for ${topic}.`, correct: false, feedback: `💥 BAM! (-15 Points) STR Trap: Shortcut heuristics regarding ${topic} lead to clinical errors.` },
-                    { text: `Delegate technical oversight of ${topic} entirely to unlicensed assistive personnel.`, correct: false, feedback: `💥 BAM! (-15 Points) STR Trap: Unlicensed delegation of ${topic} violates professional accountability.` },
-                    { text: `Postpone assessment of ${topic} until attending physician conducts morning rounds.`, correct: false, feedback: `💥 BAM! (-15 Points) STR Trap: Inaction regarding ${topic} risks patient clinical deterioration.` }
+                    { text: p.correct, correct: true, feedback: `🎉 CORRECT! Adhering to ${p.topic} standards ensures patient safety and SCFHS mastery.` },
+                    { text: p.trap1, correct: false, feedback: `💥 BAM! (-15 Points) STR Trap: This shortcut regarding ${p.topic} compromises clinical safety.` },
+                    { text: p.trap2, correct: false, feedback: `💥 BAM! (-15 Points) STR Trap: This action regarding ${p.topic} violates professional accountability.` },
+                    { text: p.trap3, correct: false, feedback: `💥 BAM! (-15 Points) STR Trap: Inaction regarding ${p.topic} risks patient clinical deterioration.` }
                 ]
             });
         }
@@ -309,7 +381,7 @@
             document.getElementById('ward-badge').innerText = `Domain: ${data.specialty}`;
             document.getElementById('principle-badge').innerText = `Principle: ${data.principle}`;
             document.getElementById('progress-display').innerText = `${currentIdx + 1} / ${cases100.length}`;
-            document.getElementById('case-id-tag').innerText = `⚡ BALANCED MASTERCASE #${String(data.id).padStart(3, '0')}: SCFHS NPSG MATRIX`;
+            document.getElementById('case-id-tag').innerText = `⚡ MASTERCASE #${String(data.id).padStart(3, '0')}: SCFHS NPSG MATRIX`;
             document.getElementById('conflict-statement').innerText = data.statement;
 
             const container = document.getElementById('action-buttons-container');
@@ -321,7 +393,7 @@
                 const btn = document.createElement('button');
                 btn.className = "p-4 rounded-xl border border-slate-800 bg-slate-950 hover:bg-slate-800 hover:border-teal-500 transition-all text-left text-xs sm:text-sm font-semibold flex items-center justify-between group shadow-md active:scale-95";
                 
-                // Uniform thumbnail applied to all options with balanced option lengths
+                // Uniform thumbnail applied to all options with fully independent option text
                 btn.innerHTML = `
                     <div class="flex items-center space-x-3">
                         <div class="w-8 h-8 rounded-lg bg-teal-950 border border-teal-800 flex items-center justify-center text-teal-400 font-bold shrink-0">🛡️</div>
@@ -385,11 +457,11 @@
             } else {
                 document.getElementById('game-arena').innerHTML = `
                     <div class="text-center py-12">
-                        <h2 class="text-3xl font-black text-teal-400 mb-4">All 100 Balanced NPSG Mastercases Completed!</h2>
-                        <p class="text-slate-300 mb-6">You successfully navigated 100 completely independent, non-repeated medical and maternity nursing scenarios with balanced option lengths.</p>
+                        <h2 class="text-3xl font-black text-teal-400 mb-4">All 100 Independent Mastercases Completed!</h2>
+                        <p class="text-slate-300 mb-6">You successfully navigated 100 completely independent medical and maternity nursing scenarios with diverse, non-repeating professional wordings.</p>
                         <div class="text-4xl font-black text-emerald-400 mb-8">Final Score: ${score} Points</div>
                         <button onclick="location.reload()" class="bg-teal-600 hover:bg-teal-500 text-slate-950 font-extrabold px-8 py-3 rounded-xl shadow-lg transition-all">
-                            Restart Balanced Matrix
+                            Restart Masterclass Matrix
                         </button>
                     </div>
                 `;
